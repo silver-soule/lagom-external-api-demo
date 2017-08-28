@@ -14,13 +14,11 @@ trait ToDoListService extends Service {
 
   override final def descriptor = {
     import Service._
-    // @formatter:off
     named("todo-list")
       .withCalls(
         restCall(Method.GET, "/todo/all", getToDoData _)
       )
       .withAutoAcl(true)
-    // @formatter:on
   }
 }
 

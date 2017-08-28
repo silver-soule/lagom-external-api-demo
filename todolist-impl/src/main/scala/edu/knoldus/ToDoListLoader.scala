@@ -1,15 +1,16 @@
 package edu.knoldus
 
-/**
-  * Created by Neelaksh on 26/8/17.
-  */
-
 import com.lightbend.lagom.scaladsl.api.ServiceLocator
 import com.lightbend.lagom.scaladsl.api.ServiceLocator.NoServiceLocator
 import com.lightbend.lagom.scaladsl.devmode.LagomDevModeComponents
 import com.lightbend.lagom.scaladsl.server.{LagomApplication, LagomApplicationContext, LagomApplicationLoader}
 import com.softwaremill.macwire.wire
 import play.api.libs.ws.ahc.AhcWSComponents
+
+/**
+  * Created by Neelaksh on 26/8/17.
+  */
+
 
 class ToDoListLoader extends LagomApplicationLoader {
 

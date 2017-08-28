@@ -12,11 +12,9 @@ trait ExternalService extends Service {
 
   override final def descriptor = {
     import Service._
-    // @formatter:off
     named("external-service")
       .withCalls(
         pathCall("/todos", getToDoList _)
       ).withAutoAcl(true)
-    // @formatter:on
   }
 }
